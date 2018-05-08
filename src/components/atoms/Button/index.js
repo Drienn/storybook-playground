@@ -1,11 +1,15 @@
-import React from 'react'
+import React from 'react';
+
+let style = {
+
+}
 
 const Button = (props) => {
   return (
     <button {...props}>
       {props.children}
     </button>
-  )
-}
+  );
+};
 
 export default Button
