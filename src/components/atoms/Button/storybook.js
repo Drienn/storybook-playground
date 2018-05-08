@@ -18,6 +18,8 @@ export const ButtonStories = storiesOf('Button', module)
     </Button>
   ))
 
+  .add('onMouseOver', () => <Button onMouseOver={action('Moused Over!')}>Mouse Over me</Button>)
+
   .add('something new', () => (
     <Button style={{backgroundColor: 'yellow'}} onClick={action('new thing')}>New  Yellow Button</Button>
   ));

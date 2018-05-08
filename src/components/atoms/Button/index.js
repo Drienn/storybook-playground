@@ -1,14 +1,19 @@
 import React from 'react';
 
 let style = {
-
+  container: {
+    border: 'solid black 2px',
+    display: 'inline-block',
+  }
 }
 
 const Button = (props) => {
   return (
-    <button {...props}>
-      {props.children}
-    </button>
+    <div style={style.container}>
+      <button {...props}>
+        {props.children}
+      </button>
+    </div>
   );
 };
 
