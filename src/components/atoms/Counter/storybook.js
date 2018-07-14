@@ -1,11 +1,15 @@
-import React from 'react';
+import React from "react";
 
-import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import { linkTo } from '@storybook/addon-links';
+import { storiesOf } from "@storybook/react";
+import { action } from "@storybook/addon-actions";
+import { linkTo } from "@storybook/addon-links";
 
-import Counter from './index.js';
+import Counter from "./";
 
-
-export const CounterStories = storiesOf('Counter', module)
-  .add('increment', () => <Counter onClick={action('clicked')}>Hello Counter </Counter>)
+export const CounterStories = storiesOf("Counter", module)
+  .add("increment", () => (
+    <Counter onClick={action("clicked")}>Hello Counter </Counter>
+  ))
+  .add("another increment", () => (
+    <Counter onClick={action("clicked")}>Hello Counter</Counter>
+  ));

@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
-import Button from './components/atoms/Button'
-import Counter from './components/atoms/Counter'
+import Button from "./components/atoms/Button";
+import Counter from "./components/atoms/Counter";
 
 class App extends Component {
   render() {
@@ -14,9 +14,9 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <Button>Child Node Hello!</Button>
-        <Counter btnName='Up!' initialValue={1}/>
-        <Counter btnName='Higher Up!' initialValue={10}/>
-        <Counter btnName='So High Up!' initialValue={100}/>
+        <Counter btnName="Up!" initialValue={1} />
+        <Counter btnName="Higher Up!" initialValue={10} />
+        <Counter btnName="So High Up!" initialValue={100} />
       </div>
     );
   }
