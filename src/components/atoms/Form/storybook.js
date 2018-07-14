@@ -8,4 +8,5 @@ import Form from "./";
 
 export const FormStories = storiesOf("Form", module)
   .add("base", () => <Form />)
-  .add("withChildren", () => <Form />);
+  .add("withChildren", () => <Form />)
+  .add("even more things@", () => <Form />);
